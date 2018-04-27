@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NavbarItem default 1`] = `
+<a
+  className="navbar-item"
+  href="http://link"
+>
+  title
+</a>
+`;

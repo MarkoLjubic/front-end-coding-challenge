@@ -1,0 +1,16 @@
+@import '../../../_variables.scss';
+
+.navbar-item {
+  align-items: center;
+  color: $gray-two;
+  display: flex;
+  font-size: $font-medium;
+  height: 100%;
+  justify-content: center;
+  width: 200px;
+
+  &-active {
+    border-bottom: 2px solid $green;
+    color: $white;
+  }
+}

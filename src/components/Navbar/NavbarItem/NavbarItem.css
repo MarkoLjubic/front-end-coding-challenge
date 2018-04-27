@@ -1,0 +1,11 @@
+.navbar-item {
+  align-items: center;
+  color: #a5a5a5;
+  display: flex;
+  font-size: 14px;
+  height: 100%;
+  justify-content: center;
+  width: 200px; }
+  .navbar-item-active {
+    border-bottom: 2px solid #00ff37;
+    color: #000000; }

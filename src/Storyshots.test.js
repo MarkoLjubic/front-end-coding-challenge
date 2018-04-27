@@ -2,7 +2,5 @@ import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-story
 
 initStoryshots({
   framework: 'react',
-  test: multiSnapshotWithOptions({
-    storybookUrl: 'http://my-specific-domain.com:9010'
-  }),
+  test: multiSnapshotWithOptions({}),
 });
