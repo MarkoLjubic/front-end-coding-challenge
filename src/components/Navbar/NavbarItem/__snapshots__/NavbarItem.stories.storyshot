@@ -2,7 +2,16 @@
 
 exports[`Storyshots NavbarItem default 1`] = `
 <a
-  className="navbar-item"
+  className="'navbar-item' undefined"
+  href="http://link"
+>
+  title
+</a>
+`;
+
+exports[`Storyshots NavbarItem when isActive is true 1`] = `
+<a
+  className="'navbar-item' navbar-item-active"
   href="http://link"
 >
   title

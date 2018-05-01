@@ -3,11 +3,13 @@ import { storiesOf } from '@storybook/react';
 
 import NavbarItem from './NavbarItem';
 
-const title = 'title';
 const path = 'http://link';
-
+const title = 'title';
 
 storiesOf('NavbarItem', module)
   .add('default', () =>
-    <NavbarItem title={title} path={path}/>
+    <NavbarItem path={path} title={title} />
+  )
+  .add('when isActive is true', () =>
+    <NavbarItem isActive path={path} title={title} />
   );

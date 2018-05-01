@@ -1,3 +1,5 @@
+@import '../src/index.css';
+
 body {
   background-color: rgba(0, 0, 0, 0.1);
   background-image: repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(0, 0, 0, 0.1) 1px, transparent 8px),
@@ -13,9 +15,4 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-a {
-  color: #008489;
-  font-weight: bold;
 }
