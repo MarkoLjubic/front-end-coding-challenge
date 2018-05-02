@@ -2,10 +2,13 @@ html {
   height: 100%; }
 
 body {
-  font-family: Helvetica, 'sans-serif';
+  font-family: Helvetica, "sans-serif";
   height: 100%;
   margin: 0;
   padding: 0; }
 
 a {
   text-decoration: none; }
+
+h2 {
+  margin: 0; }

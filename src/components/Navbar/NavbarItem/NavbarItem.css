@@ -1,10 +1,19 @@
 .navbar-item {
   align-items: center;
-  color: #a5a5a5;
+  color: rgba(255, 255, 255, 0.6);
   display: flex;
   font-size: 14px;
+  font-weight: bold;
   height: 100%;
   justify-content: center; }
   .navbar-item-active {
-    border-bottom: 2px solid #00ff37;
-    color: #ffffff; }
+    color: #ffffff;
+    position: relative; }
+    .navbar-item-active::after {
+      background-color: #00ff37;
+      bottom: 0;
+      content: "";
+      height: 6px;
+      left: 0;
+      position: absolute;
+      width: 100%; }

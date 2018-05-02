@@ -1,0 +1,27 @@
+@import "../../_variables.scss";
+
+.navbar {
+  background-color: $blue;
+  display: flex;
+  height: 60px;
+  padding: 0 10px;
+  width: 100vw;
+
+  &-header {
+    color: $white;
+    font-size: $font-large;
+    line-height: 60px;
+  }
+
+  &-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    .navbar-item {
+      flex: 1;
+      min-width: 100px;
+      max-width: 120px;
+    }
+  }
+}

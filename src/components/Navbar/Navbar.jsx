@@ -1,0 +1,21 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+import NavbarItem from "./NavbarItem/NavbarItem";
+import { navbarLinkShema } from "../../utils/constants";
+import "./Navbar.css";
+
+function Navbar() {
+  return (
+    <div className="navbar">
+      <h2 className="navbar-header">Offices</h2>
+      <div className="navbar-menu">
+        {Object.values(navbarLinkShema).map(item => (
+          <NavbarItem path={item.path} title={item.title} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;

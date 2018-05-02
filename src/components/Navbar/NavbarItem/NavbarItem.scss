@@ -1,15 +1,26 @@
-@import '../../../_variables.scss';
+@import "../../../_variables.scss";
 
 .navbar-item {
   align-items: center;
-  color: $gray-two;
+  color: rgba($white, 0.6);
   display: flex;
   font-size: $font-medium;
+  font-weight: bold;
   height: 100%;
   justify-content: center;
 
   &-active {
-    border-bottom: 2px solid $green;
     color: $white;
+    position: relative;
+
+    &::after {
+      background-color: $green;
+      bottom: 0;
+      content: "";
+      height: 6px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
   }
 }

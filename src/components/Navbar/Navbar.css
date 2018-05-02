@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #00cbff;
+  display: flex;
+  height: 60px;
+  padding: 0 10px;
+  width: 100vw; }
+  .navbar-header {
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 60px; }
+  .navbar-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center; }
+    .navbar-menu .navbar-item {
+      flex: 1;
+      min-width: 100px;
+      max-width: 120px; }
