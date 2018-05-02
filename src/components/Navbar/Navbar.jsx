@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import NavbarItem from "./NavbarItem/NavbarItem";
 import { navbarLinkShema } from "../../utils/constants";
