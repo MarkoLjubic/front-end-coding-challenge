@@ -1,0 +1,23 @@
+.list-view {
+  background-color: #00cbff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+  .list-view .item {
+    flex-direction: row;
+    height: 90px; }
+    .list-view .item .avatar {
+      margin: 0 20px; }
+    .list-view .item-data {
+      border-bottom: 2px solid #1db9f7;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center; }
+      .list-view .item-data h3 {
+        color: #ffffff;
+        margin-bottom: 3px; }
+      .list-view .item-data p {
+        color: #4f4f4f; }
