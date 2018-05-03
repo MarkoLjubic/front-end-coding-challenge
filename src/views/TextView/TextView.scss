@@ -1,0 +1,71 @@
+@import "../../_variables.scss";
+
+.text-view {
+  background-color: $blue;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.list {
+  flex-direction: column;
+
+  .item {
+    flex-direction: row;
+    height: 90px;
+
+    .avatar {
+      margin: 0 20px;
+    }
+
+    &-data {
+      border-bottom: 2px solid $blue-one;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+
+      h3 {
+        color: $white;
+        margin-bottom: 3px;
+      }
+
+      p {
+        color: $grey-one;
+      }
+    }
+  }
+}
+
+$grid-space: 25px;
+
+.grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 $grid-space $grid-space 0;
+
+  .item {
+    align-items: center;
+    background-color: $white;
+    flex-direction: column;
+    height: 300px;
+    margin: $grid-space 0 0 $grid-space;
+    width: calc(25% - 4 * $grid-space);
+
+    .avatar {
+      height: 80px;
+      margin: 25px;
+      width: 80px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    &-data {
+      text-align: center;
+    }
+  }
+}

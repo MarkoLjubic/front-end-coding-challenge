@@ -5,7 +5,7 @@ import Avatar from './Avatar/Avatar.jsx';
 import { officeModel } from '../../utils/models';
 import './Item.css';
 
-function Item({ office }) {
+function Item({ office, direction }) {
 
   const officeDescription = office.description.length > 70
     ? office.description.slice(0, 70).concat('...')
@@ -24,13 +24,14 @@ function Item({ office }) {
 Item.defaultProps = {
   office: {
     description: '',
+    id: -1,
     name: '',
     photo: ''
   },
 };
 
 Item.propTypes = {
-  office: officeModel(PropTypes),
+  office: officeModel(PropTypes)
 };
 
 export default Item;

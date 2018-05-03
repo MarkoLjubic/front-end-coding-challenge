@@ -3,22 +3,22 @@ import PropTypes from "prop-types";
 
 import Item from '../../components/Item/Item.jsx';
 import { officesModel } from '../../utils/models';
-import './ListView.css';
+import './TextView.css';
 
-function ListView({ offices }) {
+function TextView({ offices, direction }) {
   return offices
-    ? (<div className="list-view">
+    ? (<div className={`text-view ${direction}`}>
         {offices.map(office => <Item office={office} />)}
       </div>)
     : null;
 }
 
-ListView.defaultProps = {
+TextView.defaultProps = {
   offices: []
 };
 
-ListView.propTypes = {
+TextView.propTypes = {
   offices: officesModel(PropTypes)
 };
 
-export default ListView;
+export default TextView;
