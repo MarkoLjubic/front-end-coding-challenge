@@ -1,0 +1,7 @@
+.item {
+  align-items: center;
+  display: flex; }
+  .item-data h3 {
+    font-size: 16px; }
+  .item-data p {
+    font-size: 14px; }

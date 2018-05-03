@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { avatarSizes } from '../../../utils/constants';
 import './Avatar.css';
 
-function Avatar({ size, title, url }) {
+function Avatar({ title, url }) {
   return (
-    <div className={`avatar ${size}`}>
+    <div className={`avatar`}>
       {url
         ? <img alt='avatar' src={url} />
         : <span>{title.trim().substr(0, 1).toUpperCase()}</span>
@@ -16,13 +15,11 @@ function Avatar({ size, title, url }) {
 }
 
 Avatar.defaultProps = {
-  size: avatarSizes.SMALL,
   title: '',
   url: ''
 };
 
 Avatar.propTypes = {
-  size: PropTypes.string,
   title: PropTypes.string.isRequired,
   url: PropTypes.string
 };

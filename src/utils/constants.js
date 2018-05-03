@@ -13,7 +13,7 @@ export const navbarLinkShema = {
   }
 };
 
-export const avatarSizes = {
-  SMALL: 'small',
-  BIG: 'big'
+export const itemTypes = {
+  LIST: 'list',
+  GRID: 'grid'
 };

@@ -1,27 +1,16 @@
 .avatar {
   background-color: #a5a5a5;
   border-radius: 50%;
-  position: relative; }
+  height: 50px;
+  position: relative;
+  width: 50px; }
   .avatar span {
-    font-size: 18px;
     font-weight: bold;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%); }
   .avatar img {
-    border-radius: 50%; }
-
-.avatar.small {
-  height: 50px;
-  width: 50px; }
-  .avatar.small img {
+    border-radius: 50%;
     height: 50px;
     width: 50px; }
-
-.avatar.big {
-  height: 70px;
-  width: 70px; }
-  .avatar.big img {
-    height: 70px;
-    width: 70px; }

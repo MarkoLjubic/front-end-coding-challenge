@@ -1,0 +1,16 @@
+@import "../../_variables.scss";
+
+.item {
+  align-items: center;
+  display: flex;
+
+  &-data {
+    h3 {
+      font-size: $font-medium;
+    }
+
+    p {
+      font-size: $font-small;
+    }
+  }
+}
