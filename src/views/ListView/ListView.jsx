@@ -17,7 +17,7 @@ ListView.defaultProps = {
   offices: []
 };
 
-ListView.PropTypes = {
+ListView.propTypes = {
   offices: officesModel(PropTypes)
 };
 

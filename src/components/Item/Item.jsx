@@ -11,7 +11,7 @@ function Item({ office }) {
     ? office.description.slice(0, 70).concat('...')
     : office.description;
   return (
-    <div className="item">
+    <div className="item" key={office.id}>
       <Avatar title={office.name} url={office.photo} />
       <div className="item-data">
         <h3>{office.name}</h3>
