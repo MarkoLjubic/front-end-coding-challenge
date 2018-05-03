@@ -12,3 +12,8 @@ export const navbarLinkShema = {
     title: "Map"
   }
 };
+
+export const avatarSizes = {
+  SMALL: 'small',
+  BIG: 'big'
+};

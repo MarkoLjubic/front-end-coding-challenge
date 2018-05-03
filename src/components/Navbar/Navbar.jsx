@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavbarItem from "./NavbarItem/NavbarItem";
+import NavbarItem from "./NavbarItem/NavbarItem.jsx";
 import { navbarLinkShema } from "../../utils/constants";
 import "./Navbar.css";
 

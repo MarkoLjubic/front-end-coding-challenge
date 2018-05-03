@@ -15,13 +15,15 @@ function NavbarItem({ path, title, isActive }) {
 }
 
 NavbarItem.defineProp = {
-  path: "#",
+  isActive: false,
+  path: "",
   title: ""
 };
 
 NavbarItem.propTypes = {
-  path: PropTypes.string,
-  title: PropTypes.string
+  isActive: PropTypes.bool,
+  path: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default NavbarItem;

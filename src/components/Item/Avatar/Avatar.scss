@@ -1,0 +1,40 @@
+@import "../../../_variables.scss";
+
+.avatar {
+  background-color: $grey-two;
+  border-radius: 50%;
+  position: relative;
+
+  span {
+    font-size: $font-avatar;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.avatar.small {
+  height: 50px;
+  width: 50px;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.avatar.big {
+  height: 70px;
+  width: 70px;
+
+  img {
+    height: 70px;
+    width: 70px;
+  }
+}
