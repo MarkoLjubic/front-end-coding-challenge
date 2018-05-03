@@ -12,8 +12,3 @@ export const navbarLinkShema = {
     title: "Map"
   }
 };
-
-export const itemTypes = {
-  LIST: 'list',
-  GRID: 'grid'
-};

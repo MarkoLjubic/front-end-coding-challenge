@@ -6,12 +6,16 @@ import { officeModel } from '../../utils/models';
 import './Item.css';
 
 function Item({ office }) {
+
+  const officeDescription = office.description.length > 70
+    ? office.description.slice(0, 70).concat('...')
+    : office.description;
   return (
     <div className='item'>
       <Avatar title={office.name} url={office.photo} />
       <div className='item-data'>
         <h3>{office.name}</h3>
-        <p>{office.description}</p>
+        <p>{officeDescription}</p>
       </div>
     </div>
   );
