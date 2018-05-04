@@ -6,8 +6,7 @@ import { officesModel } from '../../utils/models';
 import './TextView.css';
 
 function TextView({ offices, match: { params: { direction } } }) {
-  console.log(direction, `text-view-${direction}`);
-  return offices
+  return offices && offices.length
     ? (<div className={`text-view text-view-${direction}`}>
         {offices.map(office => <Item office={office} />)}
       </div>)
