@@ -5,6 +5,7 @@
   position: relative;
   width: 50px; }
   .avatar span {
+    font-size: 18px;
     font-weight: bold;
     left: 50%;
     position: absolute;

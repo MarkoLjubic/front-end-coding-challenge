@@ -7,7 +7,7 @@ const offices = [
   {
     "id": 1,
     "name": "Belgrade Office",
-    "description": "Itekako Belgrade office address is Terazije 23",
+    "description": "Itekako Belgrade office address is Terazije 2 wefger ge er hae hsg sg r gsdt hsts thsr hah taeh ra sth3",
     "latitude": "44.786568",
     "longitude": "20.4489216",
     "photo": "http://www.geonames.org/flags/x/rs.gif"
@@ -38,6 +38,46 @@ const offices = [
   },
   {
     "id": 5,
+    "name": "Paris Office",
+    "description": "Itekako Paris office address is Main street",
+    "latitude": "48.856614",
+    "longitude": "2.3522219",
+    "photo": null
+  },
+  {
+    "id": 6,
+    "name": "Paris Office",
+    "description": "Itekako Paris office address is Main street",
+    "latitude": "48.856614",
+    "longitude": "2.3522219",
+    "photo": null
+  },
+  {
+    "id": 7,
+    "name": "Paris Office",
+    "description": "Itekako Paris office address is Main street",
+    "latitude": "48.856614",
+    "longitude": "2.3522219",
+    "photo": null
+  },
+  {
+    "id": 8,
+    "name": "Paris Office",
+    "description": "Itekako Paris office address is Main street",
+    "latitude": "48.856614",
+    "longitude": "2.3522219",
+    "photo": null
+  },
+  {
+    "id": 9,
+    "name": "Paris Office",
+    "description": "Itekako Paris office address is Main street",
+    "latitude": "48.856614",
+    "longitude": "2.3522219",
+    "photo": null
+  },
+  {
+    "id": 10,
     "name": "Paris Office",
     "description": "Itekako Paris office address is Main street",
     "latitude": "48.856614",

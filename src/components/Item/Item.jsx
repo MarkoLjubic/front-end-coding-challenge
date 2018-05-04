@@ -7,8 +7,8 @@ import './Item.css';
 
 function Item({ office, direction }) {
 
-  const officeDescription = office.description.length > 70
-    ? office.description.slice(0, 70).concat('...')
+  const officeDescription = office.description.length > 90
+    ? office.description.slice(0, 90).concat('...')
     : office.description;
   return (
     <div className="item" key={office.id}>
