@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavbarItem from "./NavbarItem/NavbarItem.jsx";
-import { navbarLinkShema } from "../../utils/constants";
+import { linkShema } from "../../utils/constants";
 import "./Navbar.css";
 
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
     <div className="navbar">
       <h2 className="navbar-header">Offices</h2>
       <div className="navbar-menu">
-        {Object.values(navbarLinkShema).map(item => (
+        {Object.values(linkShema).map(item => (
           <NavbarItem path={item.path} title={item.title} />
         ))}
       </div>

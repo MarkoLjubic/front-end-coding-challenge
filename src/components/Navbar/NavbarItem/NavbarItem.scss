@@ -9,19 +9,19 @@
   height: 100%;
   justify-content: center;
   min-height: 40px;
+}
 
-  &-active {
-    color: $white;
-    position: relative;
+.navbar-item.active {
+  color: $white;
+  position: relative;
 
-    &::after {
-      background-color: $green;
-      bottom: 0;
-      content: "";
-      height: 6px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-    }
+  &::after {
+    background-color: $green;
+    bottom: 0;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    width: 100%;
   }
 }

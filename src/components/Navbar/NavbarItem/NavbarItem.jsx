@@ -1,27 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from 'react-router-dom';
 
 import "./NavbarItem.css";
 
-function NavbarItem({ path, title, isActive }) {
+function NavbarItem({ path, title }) {
   return (
-    <a
-      className={`navbar-item ${isActive ? "navbar-item-active" : ""}`}
-      href={path}
+    <NavLink
+      className={`navbar-item`}
+      to={path}
     >
       {title}
-    </a>
+    </NavLink>
   );
 }
 
 NavbarItem.defineProp = {
-  isActive: false,
   path: "",
   title: ""
 };
 
 NavbarItem.propTypes = {
-  isActive: PropTypes.bool,
   path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 };

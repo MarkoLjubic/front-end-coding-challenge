@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.list {
+.text-view-list {
   flex-direction: column;
 
   .item {
@@ -42,7 +42,7 @@
 
 $grid-space: 25px;
 
-.grid {
+.text-view-grid {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;

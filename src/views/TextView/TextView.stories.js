@@ -22,7 +22,11 @@ const offices = [
   }
 ];
 
+const matchList = { params: { direction: 'list' } };
+const matchGrid = { params: { direction: 'grid' } };
+
 storiesOf("TextView", module)
   .add("default", () => <TextView />)
-  .add("with list direction", () => <TextView direction='list' offices={offices} />)
-  .add("with grid direction", () => <TextView direction='grid' offices={offices} />);
+  .add("with offices", () => <TextView offices={offices} />)
+  .add("with list direction", () => <TextView match={matchList} offices={offices} />)
+  .add("with grid direction", () => <TextView match={matchGrid} offices={offices} />);

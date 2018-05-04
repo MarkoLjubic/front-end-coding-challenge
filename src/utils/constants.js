@@ -1,4 +1,4 @@
-export const navbarLinkShema = {
+export const linkShema = {
   List: {
     path: "/list",
     title: "List"

@@ -5,19 +5,30 @@ import Item from '../../components/Item/Item.jsx';
 import { officesModel } from '../../utils/models';
 import './TextView.css';
 
-function TextView({ offices, direction }) {
+function TextView({ offices, match: { params: { direction } } }) {
+  console.log(direction, `text-view-${direction}`);
   return offices
-    ? (<div className={`text-view ${direction}`}>
+    ? (<div className={`text-view text-view-${direction}`}>
         {offices.map(office => <Item office={office} />)}
       </div>)
     : null;
 }
 
 TextView.defaultProps = {
+  match: {
+    params: {
+      direction: 'list'
+    }
+  },
   offices: []
 };
 
 TextView.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      direction: PropTypes.string
+    })
+  }),
   offices: officesModel(PropTypes)
 };
 
