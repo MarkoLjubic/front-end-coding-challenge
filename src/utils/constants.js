@@ -12,3 +12,7 @@ export const linkShema = {
     title: "Map"
   }
 };
+
+export const apiEndpoints = {
+  offices: 'https://itk-exam-api.herokuapp.com/api/offices'
+};
