@@ -10,7 +10,7 @@ function Navbar() {
       <h2 className="navbar-header">Offices</h2>
       <div className="navbar-menu">
         {Object.values(linkShema).map(item => (
-          <NavbarItem path={item.path} title={item.title} />
+          <NavbarItem key={item.title} path={item.path} title={item.title} />
         ))}
       </div>
     </div>
