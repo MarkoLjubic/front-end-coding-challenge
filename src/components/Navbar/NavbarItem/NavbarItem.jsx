@@ -6,7 +6,7 @@ import "./NavbarItem.css";
 function NavbarItem({ path, title, isActive }) {
   return (
     <a
-      className={`navbar-item ${isActive && "navbar-item-active"}`}
+      className={`navbar-item ${isActive ? "navbar-item-active" : ""}`}
       href={path}
     >
       {title}

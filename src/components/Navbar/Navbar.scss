@@ -20,8 +20,31 @@
 
     .navbar-item {
       flex: 1;
-      min-width: 100px;
       max-width: 120px;
+      min-width: 120px;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    min-width: 350px;
+
+    &-header {
+      text-align: center;
+    }
+
+    &-menu {
+      align-items: center;
+      flex-direction: column;
+
+      .navbar-item {
+        height: 50px;
+        max-width: 100%;
+        min-width: 100%;
+      }
     }
   }
 }
