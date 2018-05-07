@@ -20,5 +20,5 @@ h2, h3, p {
 }
 
 .app {
-  border: 3px solid $black;
+  min-width: $min-app-size;
 }

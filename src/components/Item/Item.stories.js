@@ -24,3 +24,5 @@ const office1 = {
 storiesOf("Item", module)
   .add("with required props", () => <Item office={office} />)
   .add("with photo and long description", () => <Item office={office1} />)
+  .add("with list direction", () => <Item direction='list' office={office1} />)
+  .add("with grid direction", () => <Item direction='grid' office={office1} />)

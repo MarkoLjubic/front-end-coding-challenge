@@ -24,3 +24,19 @@
     }
   }
 }
+
+@media only screen and (max-width: $size-one) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+
+    &-header {
+      text-align: center;
+    }
+
+    &-menu {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

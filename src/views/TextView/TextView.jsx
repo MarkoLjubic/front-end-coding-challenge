@@ -8,7 +8,7 @@ import './TextView.css';
 function TextView({ direction, offices }) {
   return offices && offices.length
     ? (<div className={`text-view text-view-${direction}`}>
-        {offices.map(office => <Item key={office.id} office={office} />)}
+        {offices.map(office => <Item direction={direction} key={office.id} office={office} />)}
       </div>)
     : null;
 }

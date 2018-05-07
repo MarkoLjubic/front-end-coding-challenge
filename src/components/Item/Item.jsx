@@ -5,13 +5,14 @@ import Avatar from './Avatar/Avatar.jsx';
 import { officeModel } from '../../utils/models';
 import './Item.css';
 
-function Item({ office }) {
+function Item({ direction, office }) {
 
-  const officeDescription = office.description.length > 90
-    ? office.description.slice(0, 90).concat('...')
+  const maxLength = direction === 'list' ? 90 : 120;
+  const officeDescription = office.description.length > maxLength
+    ? office.description.slice(0, maxLength).concat('...')
     : office.description;
   return (
-    <div className="item" key={office.id}>
+    <div className={`item ${direction}-item`} key={office.id}>
       <Avatar title={office.name} url={office.photo} />
       <div className="item-data">
         <h3>{office.name}</h3>
@@ -22,6 +23,7 @@ function Item({ office }) {
 }
 
 Item.defaultProps = {
+  direction: 'list',
   office: {
     description: '',
     id: -1,
@@ -31,6 +33,7 @@ Item.defaultProps = {
 };
 
 Item.propTypes = {
+  direction: PropTypes.string,
   office: officeModel(PropTypes)
 };
 
