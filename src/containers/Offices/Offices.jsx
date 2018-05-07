@@ -36,7 +36,7 @@ class Offices extends Component {
   render() {
     return (
       <div className='offices'>
-        {this.props.offices
+        {this.props.offices && this.props.offices.length
           ? this.renderRouter()
           : <Loader />
         }
