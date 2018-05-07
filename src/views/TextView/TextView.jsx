@@ -6,13 +6,8 @@ import Item from '../../components/Item/Item.jsx';
 import { officesModel } from '../../utils/models';
 import './TextView.css';
 import Loader from '../../components/Loader/Loader';
-import { getOffices } from '../../actions/offices';
 
 class TextView extends Component {
-  componentDidMount() {
-    this.props.dispatch(getOffices());
-  }
-
   render() {
     return this.props.offices && this.props.offices.length
       ? (<div className={`text-view text-view-${this.props.match.params.direction}`}>
