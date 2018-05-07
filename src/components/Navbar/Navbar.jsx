@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavbarItem from "./NavbarItem/NavbarItem.jsx";
-import { linkShema } from "../../utils/constants";
+import { linkShema } from "../../utils/config";
 import "./Navbar.css";
 
 function Navbar() {

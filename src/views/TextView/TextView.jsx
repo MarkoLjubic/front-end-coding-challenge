@@ -1,42 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
 
 import Item from '../../components/Item/Item.jsx';
 import { officesModel } from '../../utils/models';
 import './TextView.css';
-import Loader from '../../components/Loader/Loader';
 
-class TextView extends Component {
-  render() {
-    return this.props.offices && this.props.offices.length
-      ? (<div className={`text-view text-view-${this.props.match.params.direction}`}>
-          {this.props.offices.map(office => <Item key={office.id} office={office} />)}
-        </div>)
-      : <Loader />;
-  }
+function TextView({ direction, offices }) {
+  return offices && offices.length
+    ? (<div className={`text-view text-view-${direction}`}>
+        {offices.map(office => <Item key={office.id} office={office} />)}
+      </div>)
+    : null;
 }
 
 TextView.defaultProps = {
-  match: {
-    params: {
-      direction: 'list'
-    }
-  },
+  direction: 'list',
   offices: []
 };
 
 TextView.propTypes = {
-  match: PropTypes.shape({
-    params: PropTypes.shape({
-      direction: PropTypes.string
-    })
-  }),
+  direction: PropTypes.string,
   offices: officesModel(PropTypes)
 };
 
-const mapStateToProps = store => ({
-  offices: store.offices
-});
 
-export default connect(mapStateToProps)(TextView);
+export default TextView;

@@ -1,9 +1,11 @@
 export const linkShema = {
   List: {
+    direction: 'list',
     path: "/list",
     title: "List"
   },
   Grid: {
+    direction: 'grid',
     path: "/grid",
     title: "Grid"
   },

@@ -1,5 +1,5 @@
 import { API, SET_OFFICES } from './actionTypes';
-import { apiEndpoints } from '../utils/constants';
+import { apiEndpoints } from '../utils/config';
 
 export const getOffices = () => ({
   type: API,

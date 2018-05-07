@@ -5,7 +5,7 @@ import Avatar from './Avatar/Avatar.jsx';
 import { officeModel } from '../../utils/models';
 import './Item.css';
 
-function Item({ office, direction }) {
+function Item({ office }) {
 
   const officeDescription = office.description.length > 90
     ? office.description.slice(0, 90).concat('...')

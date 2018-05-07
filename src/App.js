@@ -1,24 +1,18 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { withRouter } from 'react-router'
 
 import Navbar from './components/Navbar/Navbar';
-import Router from './components/Router/Router';
-import { getOffices } from './actions/offices';
+import Offices from './containers/Offices/Offices';
 
 class App extends Component {
-  componentDidMount() {
-    this.props.dispatch(getOffices());
-  }
 
   render() {
     return (
-      <div>
+      <div className='app'>
         <Navbar />
-        <Router />
+        <Offices />
       </div>
     );
   }
 }
 
-export default withRouter(connect()(App));
+export default App;

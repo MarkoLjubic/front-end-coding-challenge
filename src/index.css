@@ -12,3 +12,6 @@ a {
 
 h2, h3, p {
   margin: 0; }
+
+.app {
+  border: 3px solid #353535; }

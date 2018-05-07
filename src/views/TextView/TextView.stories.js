@@ -22,11 +22,11 @@ const offices = [
   }
 ];
 
-const matchList = { params: { direction: 'list' } };
-const matchGrid = { params: { direction: 'grid' } };
+const directionList =  'list';
+const directionGrid = 'grid';
 
 storiesOf("TextView", module)
-  .add("default", () => <TextView.WrappedComponent />)
-  .add("with offices", () => <TextView.WrappedComponent offices={offices} />)
-  .add("with list direction", () => <TextView.WrappedComponent match={matchList} offices={offices} />)
-  .add("with grid direction", () => <TextView.WrappedComponent match={matchGrid} offices={offices} />);
+  .add("default", () => <TextView />)
+  .add("with offices", () => <TextView offices={offices} />)
+  .add("with list direction", () => <TextView direction={directionList} offices={offices} />)
+  .add("with grid direction", () => <TextView direction={directionGrid} offices={offices} />);
