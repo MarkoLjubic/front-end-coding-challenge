@@ -22,6 +22,7 @@ const apiMiddleware = ({ getState, dispatch }) => next => action => {
       }
     });
   })
+  .catch(error =>  console.log(error));
 };
 
 export default apiMiddleware;
