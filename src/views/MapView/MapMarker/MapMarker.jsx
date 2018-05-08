@@ -13,10 +13,29 @@ class MapMarker extends Component {
     super();
 
     this.handleOnClick = this.handleOnClick.bind(this);
+    this.renderInfoWindow = this.renderInfoWindow.bind(this);
   }
 
   handleOnClick() {
     this.props.handleOnClick(this.props.office.id);
+  }
+
+  renderInfoWindow() {
+    return (
+      <InfoWindow>
+        <div>
+          <div className='marker-header'>
+            {this.props.office.name}
+          </div>
+          <div className='marker-description'>
+            {this.props.office.description.length > 60
+              ? <div>{this.props.office.description.slice(0, 60)}...</div>
+              : this.props.office.description
+            }
+          </div>
+        </div>
+      </InfoWindow>
+    )
   }
 
   render() {
@@ -28,21 +47,7 @@ class MapMarker extends Component {
         }}
         onClick={this.handleOnClick}
       >
-        {this.props.isOpen
-          && <InfoWindow>
-            <div>
-              <div className='marker-header'>
-                {this.props.office.name}
-              </div>
-              <div className='marker-description'>
-                {this.props.office.description.length > 60
-                  ? <div>{this.props.office.description.slice(0, 60)}...</div>
-                  : this.props.office.description
-                }
-              </div>
-            </div>
-          </InfoWindow>
-        }
+        {this.props.isOpen && this.renderInfoWindow()}
       </Marker>
     );
   }

@@ -21,7 +21,7 @@
   padding-right: 10px;
 
   .avatar {
-    margin: 0 15px;
+    margin: 15px;
   }
 
   .item-data {
@@ -49,19 +49,19 @@
   border: 3px solid $blue-one;
   border-radius: 7px;
   flex-direction: column;
-  height: 300px;
-  margin: $grid-space 0 0 $grid-space;
-  padding: 25px;
-  width: 300px;
+  height: $grid-item-size;
+  margin: $grid-space;
+  padding: 20px;
+  width: $grid-item-size;
 
   .avatar {
-    height: 80px;
+    height: $grid-avatar-size;
     margin-bottom: 15px;
-    width: 80px;
+    width: $grid-avatar-size;
 
     img {
-      height: 80px;
-      width: 80px;
+      height: $grid-avatar-size;
+      width: $grid-avatar-size;
     }
 
     span {

@@ -3,9 +3,9 @@
 .avatar {
   background-color: $grey-two;
   border-radius: 50%;
-  height: 50px;
+  height: $list-avatar-size;
   position: relative;
-  width: 50px;
+  width: $list-avatar-size;
 
   span {
     font-size: $font-medium;
@@ -18,7 +18,7 @@
 
   img {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: $list-avatar-size;
+    width: $list-avatar-size;
   }
 }

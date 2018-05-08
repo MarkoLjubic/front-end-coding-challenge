@@ -11,7 +11,7 @@
   height: 90px;
   padding-right: 10px; }
   .list-item .avatar {
-    margin: 0 15px; }
+    margin: 15px; }
   .list-item .item-data {
     border-bottom: 2px solid #1db9f7;
     display: flex;
@@ -32,8 +32,8 @@
   border-radius: 7px;
   flex-direction: column;
   height: 300px;
-  margin: 25px 0 0 25px;
-  padding: 25px;
+  margin: 10px;
+  padding: 20px;
   width: 300px; }
   .grid-item .avatar {
     height: 80px;

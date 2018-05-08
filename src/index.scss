@@ -1,8 +1,16 @@
 @import "./_variables.scss";
 
 html {
+  box-sizing: border-box;
   height: 100%;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 
 body {
   font-family: Helvetica, "sans-serif";
