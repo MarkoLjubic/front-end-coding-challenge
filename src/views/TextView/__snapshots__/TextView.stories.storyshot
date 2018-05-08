@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots TextView default 1`] = `null`;
+
+exports[`Storyshots TextView with grid direction 1`] = `
+<div
+  className="text-view text-view-grid"
+>
+  <div
+    className="item grid-item"
+  >
+    <div
+      className="avatar"
+    >
+      <img
+        alt="avatar"
+        src="http://www.geonames.org/flags/x/rs.gif"
+      />
+    </div>
+    <div
+      className="item-data"
+    >
+      <h3>
+        Belgrade Office
+      </h3>
+      <p>
+        Itekako Belgrade office address is Terazije 2
+      </p>
+    </div>
+  </div>
+  <div
+    className="item grid-item"
+  >
+    <div
+      className="avatar"
+    >
+      <span>
+        P
+      </span>
+    </div>
+    <div
+      className="item-data"
+    >
+      <h3>
+        Paris Office
+      </h3>
+      <p>
+        Itekako Paris office address is Main street
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TextView with list direction 1`] = `
+<div
+  className="text-view text-view-list"
+>
+  <div
+    className="item list-item"
+  >
+    <div
+      className="avatar"
+    >
+      <img
+        alt="avatar"
+        src="http://www.geonames.org/flags/x/rs.gif"
+      />
+    </div>
+    <div
+      className="item-data"
+    >
+      <h3>
+        Belgrade Office
+      </h3>
+      <p>
+        Itekako Belgrade office address is Terazije 2
+      </p>
+    </div>
+  </div>
+  <div
+    className="item list-item"
+  >
+    <div
+      className="avatar"
+    >
+      <span>
+        P
+      </span>
+    </div>
+    <div
+      className="item-data"
+    >
+      <h3>
+        Paris Office
+      </h3>
+      <p>
+        Itekako Paris office address is Main street
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TextView with offices 1`] = `
+<div
+  className="text-view text-view-list"
+>
+  <div
+    className="item list-item"
+  >
+    <div
+      className="avatar"
+    >
+      <img
+        alt="avatar"
+        src="http://www.geonames.org/flags/x/rs.gif"
+      />
+    </div>
+    <div
+      className="item-data"
+    >
+      <h3>
+        Belgrade Office
+      </h3>
+      <p>
+        Itekako Belgrade office address is Terazije 2
+      </p>
+    </div>
+  </div>
+  <div
+    className="item list-item"
+  >
+    <div
+      className="avatar"
+    >
+      <span>
+        P
+      </span>
+    </div>
+    <div
+      className="item-data"
+    >
+      <h3>
+        Paris Office
+      </h3>
+      <p>
+        Itekako Paris office address is Main street
+      </p>
+    </div>
+  </div>
+</div>
+`;
