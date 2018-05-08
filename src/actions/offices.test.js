@@ -1,6 +1,6 @@
 import * as actions from './offices';
 
-describe('offices', () => {
+describe('offices actions', () => {
 
   it('should generate the action correctly', () => {
     const action = {
