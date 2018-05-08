@@ -36,8 +36,8 @@ class MapView extends Component {
   }
 
   render() {
-    return (this.props.offices && this.props.offices.length
-      ? <GoogleMap
+    return (
+      <GoogleMap
         defaultZoom={3}
         defaultCenter={{ lat: 33.4, lng: 18.2 }}
         onClick={this.hideInfo}
@@ -53,7 +53,6 @@ class MapView extends Component {
           )
         }
       </GoogleMap>
-      : null
     );
   }
 }

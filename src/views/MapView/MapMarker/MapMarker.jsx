@@ -39,12 +39,13 @@ class MapMarker extends Component {
   }
 
   render() {
+    const position = {
+      lat: parseFloat(this.props.office.latitude),
+      lng: parseFloat(this.props.office.longitude)
+    };
     return (
       <Marker
-        position={{
-          lat: parseFloat(this.props.office.latitude),
-          lng: parseFloat(this.props.office.longitude),
-        }}
+        position={position}
         onClick={this.handleOnClick}
       >
         {this.props.isOpen && this.renderInfoWindow()}
