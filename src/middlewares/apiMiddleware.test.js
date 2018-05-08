@@ -67,11 +67,11 @@ describe('apiMiddleware', () => {
   describe('error', () => {
 
     beforeAll(() => {
-      axios.mockImplementation(jest.fn(({ method, url, data }) => Promise.reject()))
+      axios.mockImplementation(jest.fn(({ method, url, data }) => Promise.reject('error')))
     });
 
     it('should catch error when api call is rejected', async () => {
-      expect.assertions(1);
+      expect.assertions(2);
       const apiAction = {
         type: 'API',
         payload: {

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { bindActionCreators } from 'redux';
 import { connect } from "react-redux";
 import { withRouter, Route, Redirect, Switch } from 'react-router';
 
@@ -19,7 +20,7 @@ class Offices extends Component {
   }
 
   componentDidMount() {
-    this.props.dispatch(getOffices());
+    this.props.actions.getOffices();
   }
 
   renderRouter() {
@@ -57,4 +58,12 @@ const mapStateToProps = store => ({
   offices: store.offices
 });
 
-export default withRouter(connect(mapStateToProps)(Offices));
+const mapDispatchToProps = dispatch => {
+  return {
+    actions: {
+      getOffices: bindActionCreators(getOffices, dispatch)
+    }
+  };
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Offices));
