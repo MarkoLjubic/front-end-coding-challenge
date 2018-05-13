@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import Loader from './Loader.jsx';
+import Loader from "./Loader.jsx";
 
-storiesOf("Loader", module).add("default", () => <Loader />)
+storiesOf("Loader", module).add("default", () => <Loader />);

@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
-import { API } from '../actions/actionTypes';
+import { API } from "../actions/actionTypes";
 
 const apiMiddleware = ({ getState, dispatch }) => next => action => {
   const { type, payload } = action;
@@ -13,15 +13,14 @@ const apiMiddleware = ({ getState, dispatch }) => next => action => {
     method: payload.method,
     url: payload.url, // should be baseURL + payload.url
     data: payload.data
-  })
-  .then((response) => {
+  }).then(response => {
     dispatch({
       type: payload.success,
       payload: {
         data: response.data
       }
     });
-  })
+  });
 };
 
 export default apiMiddleware;

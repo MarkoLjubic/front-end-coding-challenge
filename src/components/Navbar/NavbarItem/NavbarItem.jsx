@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 import "./NavbarItem.css";
 
 function NavbarItem({ path, title }) {
   return (
-    <NavLink
-      className={`navbar-item`}
-      to={path}
-    >
+    <NavLink className="navbar-item" to={path}>
       {title}
     </NavLink>
   );

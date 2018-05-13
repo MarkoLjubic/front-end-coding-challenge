@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import './Loader.css'
+import "./Loader.css";
 
-function Loader () {
+function Loader() {
   return (
-    <div className='loader-wrapper'>
-      <div className='loader' />
+    <div className="loader-wrapper">
+      <div className="loader" />
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import offices from './offices';
+import offices from "./offices";
 
 const rootReducer = combineReducers({
   offices

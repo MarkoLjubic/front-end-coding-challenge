@@ -1,22 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import './Avatar.css';
+import "./Avatar.css";
 
 function Avatar({ title, url }) {
   return (
     <div className={`avatar`}>
-      {url
-        ? <img alt='avatar' src={url} />
-        : <span>{title.trim().substr(0, 1).toUpperCase()}</span>
-      }
+      {url ? (
+        <img alt="avatar" src={url} />
+      ) : (
+        <span>
+          {title
+            .trim()
+            .substr(0, 1)
+            .toUpperCase()}
+        </span>
+      )}
     </div>
-  )
+  );
 }
 
 Avatar.defaultProps = {
-  title: '',
-  url: ''
+  title: "",
+  url: ""
 };
 
 Avatar.propTypes = {

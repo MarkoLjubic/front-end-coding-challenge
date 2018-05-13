@@ -5,9 +5,8 @@ export const officeModel = PropTypes =>
     name: PropTypes.string.isRequired,
     latitude: PropTypes.string,
     longitude: PropTypes.string,
-    photo: PropTypes.string,
+    photo: PropTypes.string
   });
-
 
 export const officesModel = PropTypes =>
   PropTypes.arrayOf(officeModel(PropTypes));

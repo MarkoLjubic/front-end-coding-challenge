@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
-import {
-  Marker,
-  InfoWindow
-} from 'react-google-maps';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import { Marker, InfoWindow } from "react-google-maps";
+import PropTypes from "prop-types";
 
-import { officeModel } from '../../../utils/models';
-import './MapMarker.css';
+import { officeModel } from "../../../utils/models";
+import "./MapMarker.css";
 
 class MapMarker extends Component {
   constructor() {
@@ -24,18 +21,17 @@ class MapMarker extends Component {
     return (
       <InfoWindow>
         <div>
-          <div className='marker-header'>
-            {this.props.office.name}
-          </div>
-          <div className='marker-description'>
-            {this.props.office.description.length > 60
-              ? <div>{this.props.office.description.slice(0, 60)}...</div>
-              : this.props.office.description
-            }
+          <div className="marker-header">{this.props.office.name}</div>
+          <div className="marker-description">
+            {this.props.office.description.length > 60 ? (
+              <div>{this.props.office.description.slice(0, 60)}...</div>
+            ) : (
+              this.props.office.description
+            )}
           </div>
         </div>
       </InfoWindow>
-    )
+    );
   }
 
   render() {
@@ -43,7 +39,7 @@ class MapMarker extends Component {
       <Marker
         position={{
           lat: parseFloat(this.props.office.latitude),
-          lng: parseFloat(this.props.office.longitude),
+          lng: parseFloat(this.props.office.longitude)
         }}
         onClick={this.handleOnClick}
       >
