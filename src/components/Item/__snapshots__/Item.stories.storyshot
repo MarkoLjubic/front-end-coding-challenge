@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Item with grid direction 1`] = `
+<div
+  className="item grid-item"
+>
+  <div
+    className="avatar"
+  >
+    <img
+      alt="avatar"
+      src="https://cdn.pixabay.com/photo/2017/08/15/03/22/wheat-2642654_960_720.jpg"
+    />
+  </div>
+  <div
+    className="item-data"
+  >
+    <h3>
+      Belgrade Office
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Donec in est sed neque ullamcorper bibendum venenatis ut sapi...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item with list direction 1`] = `
+<div
+  className="item list-item"
+>
+  <div
+    className="avatar"
+  >
+    <img
+      alt="avatar"
+      src="https://cdn.pixabay.com/photo/2017/08/15/03/22/wheat-2642654_960_720.jpg"
+    />
+  </div>
+  <div
+    className="item-data"
+  >
+    <h3>
+      Belgrade Office
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Donec in est sed neque ullamcor...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item with photo and long description 1`] = `
+<div
+  className="item list-item"
+>
+  <div
+    className="avatar"
+  >
+    <img
+      alt="avatar"
+      src="https://cdn.pixabay.com/photo/2017/08/15/03/22/wheat-2642654_960_720.jpg"
+    />
+  </div>
+  <div
+    className="item-data"
+  >
+    <h3>
+      Belgrade Office
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Donec in est sed neque ullamcor...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item with required props 1`] = `
+<div
+  className="item list-item"
+>
+  <div
+    className="avatar"
+  >
+    <span>
+      B
+    </span>
+  </div>
+  <div
+    className="item-data"
+  >
+    <h3>
+      Belgrade Office
+    </h3>
+    <p>
+      Itekako Belgrade office address is Terazije 23
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,27 @@
+@import "../../../_variables.scss";
+
+.navbar-item {
+  align-items: center;
+  color: rgba($white, 0.6);
+  display: flex;
+  font-size: $font-medium;
+  font-weight: bold;
+  height: 100%;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.navbar-item.active {
+  color: $white;
+  position: relative;
+
+  &::after {
+    background-color: $green;
+    bottom: 0;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}

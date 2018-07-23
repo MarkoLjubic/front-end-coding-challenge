@@ -3,14 +3,54 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-google-maps": "^9.4.5",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "recompose": "^0.27.0",
+    "redux": "^4.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:css": "node-sass-chokidar src/ -o src/",
+    "build:css:storybook": "node-sass-chokidar .storybook/ -o .storybook/",
+    "watch:css": "npm run build:css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start:js": "react-scripts start",
+    "start": "npm-run-all -p watch:css start:js",
+    "build:js": "react-scripts build",
+    "build": "npm-run-all build:css build:js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "start:test:coverage": "react-scripts test --env=jsdom --coverage",
+    "test:coverage": "npm-run-all --sequential build:css:storybook build:css start:test:coverage"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.2",
+    "@storybook/addon-storyshots": "^3.4.2",
+    "@storybook/addons": "^3.4.2",
+    "@storybook/react": "^3.4.2",
+    "babel-core": "^6.26.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "prettier": "1.12.1",
+    "react-test-renderer": "^16.3.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/registerServiceWorker.js",
+      "!src/setupTests.js",
+      "!src/**/*.stories.js",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageReporters": [
+      "html"
+    ]
   }
 }

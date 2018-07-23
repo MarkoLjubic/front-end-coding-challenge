@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Navbar default 1`] = `
+<div
+  className="navbar"
+>
+  <h2
+    className="navbar-header"
+  >
+    Offices
+  </h2>
+  <div
+    className="navbar-menu"
+  >
+    <a
+      aria-current={false}
+      className="navbar-item"
+      href="#/list"
+      onClick={[Function]}
+      style={undefined}
+    >
+      List
+    </a>
+    <a
+      aria-current={false}
+      className="navbar-item"
+      href="#/grid"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Grid
+    </a>
+    <a
+      aria-current={false}
+      className="navbar-item"
+      href="#/map"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Map
+    </a>
+  </div>
+</div>
+`;

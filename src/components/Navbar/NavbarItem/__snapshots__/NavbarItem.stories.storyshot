@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NavbarItem default 1`] = `
+<a
+  aria-current={false}
+  className="navbar-item"
+  href="#/list"
+  onClick={[Function]}
+  style={undefined}
+>
+  title
+</a>
+`;

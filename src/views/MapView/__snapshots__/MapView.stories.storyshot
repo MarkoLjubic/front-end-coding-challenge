@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MapView default 1`] = `
+<div
+  style={
+    Object {
+      "height": "600px",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots MapView with offices 1`] = `
+<div
+  style={
+    Object {
+      "height": "600px",
+    }
+  }
+/>
+`;

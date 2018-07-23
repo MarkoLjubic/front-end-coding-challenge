@@ -1,0 +1,42 @@
+@import "../../_variables.scss";
+
+.navbar {
+  background-color: $blue;
+  display: flex;
+  height: 60px;
+  padding: 0 10px;
+
+  &-header {
+    color: $white;
+    font-size: $font-large;
+    line-height: 60px;
+  }
+
+  &-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    .navbar-item {
+      flex: 1;
+      max-width: 120px;
+      min-width: 120px;
+    }
+  }
+}
+
+@media only screen and (max-width: $size-one) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+
+    &-header {
+      text-align: center;
+    }
+
+    &-menu {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

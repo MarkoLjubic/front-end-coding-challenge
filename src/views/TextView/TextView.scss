@@ -1,0 +1,18 @@
+@import "../../_variables.scss";
+
+.text-view {
+  background-color: $blue;
+  border: 3px solid $blue-one;
+  display: flex;
+}
+
+.text-view-list {
+  flex-direction: column;
+}
+
+.text-view-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $grid-space;
+}

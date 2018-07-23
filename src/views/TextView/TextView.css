@@ -1,0 +1,13 @@
+.text-view {
+  background-color: #00cbff;
+  border: 3px solid #1db9f7;
+  display: flex; }
+
+.text-view-list {
+  flex-direction: column; }
+
+.text-view-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px; }

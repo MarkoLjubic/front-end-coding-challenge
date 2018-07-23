@@ -1,0 +1,11 @@
+@import "../../_variables.scss";
+
+.offices {
+  padding: 20px;
+}
+
+@media only screen and (max-width: $size-one) {
+  .offices {
+    padding: 0;
+  }
+}

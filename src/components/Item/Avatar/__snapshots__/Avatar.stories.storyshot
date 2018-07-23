@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Avatar default 1`] = `
+<div
+  className="avatar"
+>
+  <span>
+    T
+  </span>
+</div>
+`;
+
+exports[`Storyshots Avatar with url prop 1`] = `
+<div
+  className="avatar"
+>
+  <img
+    alt="avatar"
+    src="https://cdn.pixabay.com/photo/2017/08/15/03/22/wheat-2642654_960_720.jpg"
+  />
+</div>
+`;
